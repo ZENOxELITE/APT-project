@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - MonarchTime{% endblock %}
+
+{% block content %}
+<!-- About Hero -->
+<section class="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="brand-font text-5xl font-bold mb-7">About <span class="text-amber-400">MonarchTime</span></h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-16">Crafting timeless masterpieces since 1985</p>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-2"> Founded in 1985, MonarchTime has been at the forefront of luxury watchmaking for nearly four decades. 
+            What began as a small workshop in Geneva has grown into a globally recognized brand synonymous with 
+            precision, elegance, and timeless design.</p>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-2"> Our master craftsmen combine traditional Swiss watchmaking techniques with cutting-edge technology 
+            to create timepieces that are not just instruments for telling time, but works of art that tell stories.</p>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-2"> Every MonarchTime watch undergoes rigorous quality control and is backed by our commitment to excellence, 
+            ensuring that each piece meets the highest standards of craftsmanship and durability.</p>
+    </div>
+</section>
+
+<!-- Our Story -->
+<!-- <section class="py-20 bg-white"> -->
+    <!-- <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="brand-font text-4xl font-bold text-gray-800 mb-6">Our Story</h2>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                    Founded in 1985, MonarchTime has been at the forefront of luxury watchmaking for nearly four decades. 
+                    What began as a small workshop in Geneva has grown into a globally recognized brand synonymous with 
+                    precision, elegance, and timeless design.
+                </p>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                    Our master craftsmen combine traditional Swiss watchmaking techniques with cutting-edge technology 
+                    to create timepieces that are not just instruments for telling time, but works of art that tell stories.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Every MonarchTime watch undergoes rigorous quality control and is backed by our commitment to excellence, 
+                    ensuring that each piece meets the highest standards of craftsmanship and durability.
+                </p>
+            </div> -->
+            <!-- <div class="bg-gradient-to-br from-amber-100 to-amber-200 rounded-2xl p-12 text-center">
+                <svg class="w-32 h-32 mx-auto text-amber-600 mb-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                </svg>
+                <h3 class="brand-font text-3xl font-bold text-gray-800 mb-2">39 Years</h3>
+                <p class="text-gray-600 text-lg">of Excellence in Watchmaking</p>
+            </div> -->
+        </div>
+    </div>
+<!-- </section> -->
+
+<!-- Values -->
+<!-- <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="brand-font text-4xl font-bold text-center text-gray-800 mb-16">Our Core Values</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Excellence</h3>
+                <p class="text-gray-600">Uncompromising quality in every detail</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Innovation</h3>
+                <p class="text-gray-600">Blending tradition with technology</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Passion</h3>
+                <p class="text-gray-600">Love for the art of watchmaking</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Community</h3>
+                <p class="text-gray-600">Building lasting relationships</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- CTA -->
+<!-- <section class="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="brand-font text-4xl font-bold mb-6">Experience the <span class="text-amber-400">MonarchTime</span> Difference</h2>
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Explore our collection and discover the perfect timepiece that reflects your style and personality.
+        </p>
+        <a href="{% url 'products' %}" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 text-decoration-none">
+            View Our Collection
+        </a>
+    </div>
+</section> -->
+{% endblock %}
