@@ -39,4 +39,4 @@ RUN python manage.py collectstatic --noinput
 EXPOSE 8000
 
 # Run gunicorn server
-CMD ["gunicorn", "your_project_name.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "Project.wsgi:application", "--bind", "0.0.0.0:8000"]
