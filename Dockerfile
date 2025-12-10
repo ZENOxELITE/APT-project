@@ -1,10 +1,11 @@
 # Use official Python 3.12 slim image
 FROM python:3.12-slim
 
-# Set environment variables
+# Environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    VENV_PATH=/opt/venv
+    VENV_PATH=/opt/venv \
+    PATH="$VENV_PATH/bin:$PATH"
 
 # Set working directory
 WORKDIR /app
@@ -18,25 +19,24 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Create virtual environment
 RUN python -m venv $VENV_PATH
-ENV PATH="$VENV_PATH/bin:$PATH"
 
 # Upgrade pip
 RUN pip install --upgrade pip
 
-# Copy requirements first for caching
+# Copy requirements for caching
 COPY requirements.txt .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy project files
+# Copy all project files
 COPY . .
 
-# Collect static files (if using whitenoise)
-RUN python manage.py collectstatic --noinput
+# Make entrypoint executable
+RUN chmod +x /app/entrypoint.sh
 
 # Expose port
 EXPOSE 8000
 
-# Run gunicorn server
-CMD ["gunicorn", "Project.wsgi:application", "--bind", "0.0.0.0:8000"]
+# Use entrypoint
+ENTRYPOINT ["/app/entrypoint.sh"]
