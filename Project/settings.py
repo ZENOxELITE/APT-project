@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['*']  # Railway will handle this, or add your domain later
 
 
 # Application definition
-
+CSRF_TRUSTED_ORIGINS = ['https://*.railway.app', 'https://*.vercel.app']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
