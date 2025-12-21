@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['*']  # Railway will handle this, or add your domain later
 
 
 # Application definition
-CSRF_TRUSTED_ORIGINS = ['https://*.railway.app', 'https://*.vercel.app']
+CSRF_TRUSTED_ORIGINS = ['https://*.railway.app']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles_build'
 
 # Whitenoise settings for static files
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
